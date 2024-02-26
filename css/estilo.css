@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+/* Selector de tipo clase . */
+.navegacion{
+    background-color: #293387;
+    /* background-color: #F58634; */
+    /* background-color: #2d2284; */
+    /* background-color: #3999d4; */
+    /* background-color: #71bfea; */
+    /* background-color: #347cb8; */
+    /* background-color: #53589b; */
+    /* background-color: #0c67b0; */
+    /* display: flex; */
+    /* flex-direction: row; */
+    /* justify-content: space-between; */
+    /* align-items: center; */
+    /* padding: 0 20px; */
+    /* margin: 0 0 10px 0; */
+    /* height: 90px; */
+    /* flex-wrap: wrap; */
+}
+
+/* Selector combinado entre clase y etiqueta */
+/* .navegacion ul{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+} */
+
+.navegacion li{
+    padding: 0 10px;
+}
+
+/* .navegacion a{
+    color: white;
+    text-decoration: none;
+} */
+
+.navegacion img{
+    width: 60px;
+    height: auto;
+}
+
+main h1{
+    text-align: center;
+    padding: 20px;
+    text-transform: uppercase;
+}
+
+.card{
+    text-align: center;
+    align-items: center;
+}
+
+.card img{
+    width: 240px;
+    height: 240px;
+}
+.seccion1-index .imagen-grande img{
+    width: 1263px;
+}
+
+.pie{
+    /* background-color: blueviolet; */
+}
+
+.pie img{
+    width: 60px;
+    height: auto;
+}
+
+.bi {
+    font-size: 1.25em;
+    margin: 0 .5em;
+}
+
+
+
+textarea{
+    resize: none;
+}
