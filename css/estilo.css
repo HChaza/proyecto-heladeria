@@ -25,11 +25,11 @@
 }
 
 /* Selector combinado entre clase y etiqueta */
-/* .navegacion ul{
+.navegacion ul{
     list-style: none;
     display: flex;
     flex-wrap: wrap;
-} */
+}
 
 .navegacion li{
     padding: 0 10px;
@@ -64,6 +64,71 @@ main h1{
     width: 1263px;
 }
 
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .card {
+    width: 250px;
+    margin: 20px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    text-align: center;
+  }
+  
+  .card img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .card h3 {
+    margin-top: 10px;
+  }
+
+/**** Nosotros ****/
+.sobre-nosotros{
+    background-image: linear-gradient( to right, transparent 50%, #F58634 50%, #F58634 100% ), url(../resources/hella-179-scaled.jpg);
+    background-position: left center;
+    padding: 10rem 0;
+    background-repeat: no-repeat;
+    background-size: contain; 
+    /* 100%, 120rem */
+}
+
+.sobre-nosotros-grid{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.texto-nosotros{
+    flex-basis: 50%;
+    padding: 0 5rem;
+    text-align: justify; /* Alinea el texto justificado */
+}
+
+/* Estilo para el contenedor de las imágenes */
+.nosotros-imagenes {
+    display: flex; /* Utilizamos flexbox para alinear las imágenes */
+    justify-content: center; /* Centramos horizontalmente las imágenes */
+    gap: 60px; /* Espacio entre las imágenes */
+    padding: 60px;
+}
+
+/* Estilo para cada artículo que contiene una imagen */
+.nosotros-imagenes article {
+    flex: 1; /* Cada artículo ocupará un tercio del espacio disponible */
+    max-width: 300px; /* Establecemos un ancho máximo para las imágenes */
+}
+
+/* Estilo para las imágenes */
+.nosotros-imagenes img {
+    width: 100%; /* Las imágenes ocuparán todo el ancho del contenedor */
+    height: auto; /* La altura se ajustará automáticamente para mantener la proporción */
+}
+
 .pie{
     /* background-color: blueviolet; */
 }
@@ -82,4 +147,19 @@ main h1{
 
 textarea{
     resize: none;
+}
+
+
+/* Media queries para diseño responsivo */
+@media screen and (max-width: 768px) {
+    .texto-nosotros {
+        flex-basis: 100%;
+        padding: 0 2rem;
+    }
+    .nosotros-imagenes {
+        flex-wrap: wrap;
+    }
+    .nosotros-imagenes article {
+        flex: 1 0 50%; /* Dos imágenes por fila en dispositivos pequeños */
+    }
 }
