@@ -1,0 +1,22 @@
+/* HEADER - NAV */
+.navegacion {
+    background-color: #293387;
+}
+
+/* Selector combinado entre clase y etiqueta */
+.navegacion {
+    ul {
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    li {
+        padding: 0 10px;
+    }
+
+    img {
+        width: 60px;
+        height: auto;
+    }
+}
